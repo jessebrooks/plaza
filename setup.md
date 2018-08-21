@@ -2,9 +2,9 @@
 
 Guide to create a new AWS API built on:
 
-AWS RDS PostgreSQL
-AWS Lambda (Python 3.6 + Psycopg2)
-AWS API Gateway instance
+* AWS RDS PostgreSQL
+* AWS Lambda (Python 3.6 + Psycopg2)
+* AWS API Gateway instance
 
 ## Create an AWS RDS PostgreSQL Database
 

@@ -1,8 +1,0 @@
-{
-  "name": "plaza",
-  "version": "0.0.1",
-  "dependencies": {
-    "aws-sdk": "2.176.0",
-    "slappforge-sdk-aws": "0.0.5"
-  }
-}

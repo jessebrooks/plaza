@@ -126,7 +126,7 @@ Reference: https://github.com/psycopg/psycopg2
 
     def get_person():
         result = []
-        conn = psycopg2.connect("dbname='plaza' user='caesar' host='plaza.c2wsmdjwnmys.us-west-2.rds.amazonaws.com' password='Coco4658210.'")
+        conn = psycopg2.connect("dbname='test' user='test' host='plaza.************.us-west-2.rds.amazonaws.com' password='test123'")
         cur = conn.cursor()
         cur.execute("""SELECT * FROM people""")
         for row in cur:

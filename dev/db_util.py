@@ -13,12 +13,22 @@ def db_conn():
         print("Unable to connect to database")
     return conn
 
-def db_data(conn, query):
-    result = []
-    print("Now executing: %s" % (query))
-    cursor = conn.cursor()
-    cursor.execute(query)
-    raw = cursor.fetchall()
-    for line in raw:
-        result.append(line)
-    return result
+def db_get(conn, query):
+    try:    
+        result = []
+        cursor = conn.cursor()
+        cursor.execute(query)
+        raw = cursor.fetchall()
+        for line in raw:
+            result.append(line)
+        return result
+    except:
+        return 1
+
+def db_post(conn, query):
+    try:
+        cursor = conn.cursor()
+        cursor.execute(query)
+        return 0
+    except:
+        return 1

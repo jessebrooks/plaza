@@ -4,7 +4,7 @@ from db_util import db_conn, db_get, db_post
 def get_person(event, context):
     query_cmd = "SELECT * FROM people"
     conn = db_conn()
-    result = db_data(conn, query_cmd)
+    result = db_get(conn, query_cmd)
     conn.close()
     return result
 
@@ -21,7 +21,7 @@ def post_person(event, context):
                 event['first_name'], 
                 event['last_name'])
     conn = db_conn()
-    result = db_data(conn, query_cmd)
+    result = db_post(conn, query_cmd)
     conn.commit()
     conn.close()
     return result

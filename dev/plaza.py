@@ -8,7 +8,7 @@ def get_person(event, context):
     conn.close()
     return result
 
-def post_person(event, context)
+def post_person(event, context):
     query_cmd = """
         INSERT INTO people(
             id_num, 
